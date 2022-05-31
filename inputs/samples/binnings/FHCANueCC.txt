@@ -1,0 +1,5 @@
+variables: CosThetamu CosThetamu Pmu Pmu
+-1 1 200 300
+-1 1 300 400
+-1 1 400 1000
+-1 1 1000 30000
