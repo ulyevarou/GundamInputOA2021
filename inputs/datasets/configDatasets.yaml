@@ -1,0 +1,28 @@
+# ------------------------
+# Dataset definitions
+# ------------------------
+
+- name: "ND280"
+  isEnabled: true
+
+  showSelectedEventCount: true
+
+  selectedDataEntry: "Asimov" # default
+
+  mc:
+    tree: "sample_sum"
+    nominalWeightFormula: "FluxWeight[0] * PileUpWeight * POTWeight * PileUpWeight * passedPsyche * ( NVertexID == 1 )"
+    #    additionalLeavesStorage: [ "SelectedSample" ]
+    filePathList:
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run9wMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run2aMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run2wMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run3aMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run4aMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run4wMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run5wMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run6aMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run7wMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run8aMCsplines.root"
+      - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run8wMCsplines.root"
+

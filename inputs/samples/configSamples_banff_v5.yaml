@@ -9,7 +9,6 @@ llhStatFunction: "BarlowLLH_Fix_Weight"
 
 fitSampleList:
 
-
   ##########################
   # FHC
   ##########################
