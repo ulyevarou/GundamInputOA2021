@@ -49,7 +49,7 @@ fitterEngineConfig:
     throwParameters: false
 
     dataSetList:            "./inputs/datasets/configDatasets.yaml"
-    fitSampleSetConfig:     "./inputs/samples/configSamples_banff_v5.yaml"
-    parameterSetListConfig: "./inputs/parameters/configParSet_banff_fin_v8.yaml"
+    fitSampleSetConfig:     "./inputs/samples/configSamples.yaml"
+    parameterSetListConfig: "./inputs/parameters/configParSet.yaml"
     plotGeneratorConfig:    "./inputs/plots/configPlotGenerator.yaml"
 
