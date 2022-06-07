@@ -1,6 +1,12 @@
+#########################################
+# OA 2021 inputs for ND fit
+#########################################
+
 generateSamplePlots: true
 generateOneSigmaPlots: false # can be enabled with --one-sigma
 scanParameters: false # can be triggered with --scan
+
+minGundamVersion: 1.4.3
 
 # Pushing the parameter away from the minimum allow Minuit to better scan the area
 throwMcBeforeFit: true
