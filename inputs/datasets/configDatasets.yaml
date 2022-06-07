@@ -11,7 +11,7 @@
 
   mc:
     tree: "sample_sum"
-    selectionCutFormula: "( NVertexID == 1 ) * foundTrueVert * passedPsyche"
+    selectionCutFormula: "( NVertexID == 1 ) * passedPsyche"
     nominalWeightFormula: "FluxWeight[0] * POTWeight * PileUpWeight * DetNomWeight * ( 1 + ( TMath::Abs(ReactionCode) == 38 || TMath::Abs(ReactionCode) == 39 ) )"
     #    additionalLeavesStorage: [ "SelectedSample" ]
     filePathList:
