@@ -1,7 +1,7 @@
 # Flux Systematics:
 # Each parameter represent a bin in true neutrino energy / flavor / FHC-RHC
 - name: Flux Systematics
-  isEnabled: false
+  isEnabled: true
 
   # Fit Parameters Options:
   #fixGhostFitParameters: true # false by default
@@ -26,7 +26,7 @@
 # Each bin of the matrix represent a kinematic bin
 # Eigen decompose must be done
 - name: ND280 Detector Systematics
-  isEnabled: false
+  isEnabled: true
 
   #useEigenDecompInFit: true
   #fixGhostFitParameters: true
@@ -47,10 +47,75 @@
   printDialSetsSummary: false
   disableOneSigmaPlots: false
 
+# Cross-Section systematics (binned) EB parameters
+- name: Cross-Section (binned) Systematics
+  isEnabled: true
+
+  fixGhostFitParameters: false
+
+  covarianceMatrixFilePath: "./inputs/parameters/xsecBinned/OA2021_Eb_XSecBinParams_v7_fixAlpha_extendBounds_linearEb.root"
+  covarianceMatrixTMatrixD: xsec_bin_cov
+  parameterNameTObjArray: xsec_bin_param_name
+  parameterPriorTVectorD: xsec_bin_param_prior
+  parameterLowerBoundsTVectorD: xsec_bin_param_lb
+  parameterUpperBoundsTVectorD: xsec_bin_param_ub
+  printDialSetsSummary: true
+
+  parameterDefinitions:
+    - parameterName: "EB_bin_C_nu"
+      isEnabled: true
+      dialSetDefinitions:
+        - dialsType: Graph
+          applyOnDataSets: [ "ND280" ]
+          minDialResponse: 0
+          parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_C_nu.txt"
+          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
+          dialsList:       "EB_bin_C_nu_graphs" # TObjArray
+
+    - parameterName: "EB_bin_C_nubar"
+      isEnabled: true
+      dialSetDefinitions:
+        - dialsType: Graph
+          applyOnDataSets: [ "ND280" ]
+          minDialResponse: 0
+          parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_C_nubar.txt"
+          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
+          dialsList:       "EB_bin_C_nubar_graphs" # TObjArray
+
+
+    - parameterName: "EB_bin_O_nu"
+      isEnabled: true
+      dialSetDefinitions:
+        - dialsType: Graph
+          applyOnDataSets: [ "ND280" ]
+          minDialResponse: 0
+          parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_O_nu.txt"
+          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
+          dialsList:       "EB_bin_O_nu_graphs" # TObjArray
+
+    - parameterName: "EB_bin_O_nubar"
+      isEnabled: true
+      dialSetDefinitions:
+        - dialsType: Graph
+          applyOnDataSets: [ "ND280" ]
+          minDialResponse: 0
+          parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_O_nubar.txt"
+          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
+          dialsList:       "EB_bin_O_nubar_graphs" # TObjArray
+
+    - parameterName: "EB_alpha"
+      isEnabled: false
+      dialSetDefinitions:
+        - dialsType: Graph
+          applyOnDataSets: [ "ND280" ]
+          minDialResponse: 0
+          #parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_alpha.txt"
+          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
+          dialsList:       "EB_alpha_graphs" # TObjArray
 
 # Cross-Section systematics
 - name: Cross-Section Systematics
-  isEnabled: false
+  isEnabled: true
 
   fixGhostFitParameters: false
 
@@ -304,7 +369,7 @@
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "Optical_Potential_C12Graph"
           minimumSplineResponse: "0"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -2.
           #mirrorHighEdge: 2.
 
@@ -318,7 +383,7 @@
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "Optical_Potential_O16Graph"
           minimumSplineResponse: "0"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -2.
           #mirrorHighEdge: 2.
 
@@ -396,7 +461,7 @@
         - dialsType: Spline
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "PDD_C_npGraph"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -1.
           #mirrorHighEdge: 1.
 
@@ -406,7 +471,7 @@
         - dialsType: Spline
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "PDD_C_NNGraph"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -1.
           #mirrorHighEdge: 1.
 
@@ -416,7 +481,7 @@
         - dialsType: Spline
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "PDD_O_npGraph"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -1.
           #mirrorHighEdge: 1.
 
@@ -426,7 +491,7 @@
         - dialsType: Spline
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "PDD_O_NNGraph"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -1.
           #mirrorHighEdge: 1.
 
@@ -470,7 +535,7 @@
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "RES_Eb_C_numuGraph"
           minimumSplineResponse: "0"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -1.
           #mirrorHighEdge: 1.
 
@@ -482,7 +547,7 @@
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "RES_Eb_O_numuGraph"
           minimumSplineResponse: "0"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -1.
           #mirrorHighEdge: 1.
 
@@ -493,7 +558,7 @@
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "RES_Eb_C_numubarGraph"
           minimumSplineResponse: "0"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -1.
           #mirrorHighEdge: 1.
 
@@ -504,7 +569,7 @@
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "RES_Eb_O_numubarGraph"
           minimumSplineResponse: "0"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -1.
           #mirrorHighEdge: 1.
 
@@ -516,7 +581,7 @@
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "R_S_Delta_DecayGraph"
           minimumSplineResponse: "0"
-          useMirrorDial: true
+          useMirrorDial: false
           #mirrorLowEdge: -3.
           #mirrorHighEdge: 5.
 
@@ -729,70 +794,4 @@
           applyOnDataSets: [ "ND280" ]
           dialLeafName: "MultiPi_BYGraph"
 
-
-# Cross-Section systematics (binned) EB parameters
-- name: Cross-Section (binned) Systematics
-  isEnabled: true
-
-  fixGhostFitParameters: false
-
-  covarianceMatrixFilePath: "./inputs/parameters/xsecBinned/OA2021_Eb_XSecBinParams_v7_fixAlpha_extendBounds_linearEb.root"
-  covarianceMatrixTMatrixD: xsec_bin_cov
-  parameterNameTObjArray: xsec_bin_param_name
-  parameterPriorTVectorD: xsec_bin_param_prior
-  parameterLowerBoundsTVectorD: xsec_bin_param_lb
-  parameterUpperBoundsTVectorD: xsec_bin_param_ub
-  printDialSetsSummary: true
-
-  parameterDefinitions:
-    - parameterName: "EB_bin_C_nu"
-      isEnabled: true
-      dialSetDefinitions:
-        - dialsType: Graph
-          applyOnDataSets: [ "ND280" ]
-          minDialResponse: 0
-          parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_C_nu.txt"
-          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
-          dialsList:       "EB_bin_C_nu_graphs" # TObjArray
-
-    - parameterName: "EB_bin_C_nubar"
-      isEnabled: true
-      dialSetDefinitions:
-        - dialsType: Graph
-          applyOnDataSets: [ "ND280" ]
-          minDialResponse: 0
-          parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_C_nubar.txt"
-          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
-          dialsList:       "EB_bin_C_nubar_graphs" # TObjArray
-
-
-    - parameterName: "EB_bin_O_nu"
-      isEnabled: true
-      dialSetDefinitions:
-        - dialsType: Graph
-          applyOnDataSets: [ "ND280" ]
-          minDialResponse: 0
-          parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_O_nu.txt"
-          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
-          dialsList:       "EB_bin_O_nu_graphs" # TObjArray
-
-    - parameterName: "EB_bin_O_nubar"
-      isEnabled: true
-      dialSetDefinitions:
-        - dialsType: Graph
-          applyOnDataSets: [ "ND280" ]
-          minDialResponse: 0
-          parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_O_nubar.txt"
-          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
-          dialsList:       "EB_bin_O_nubar_graphs" # TObjArray
-
-    - parameterName: "EB_alpha"
-      isEnabled: false
-      dialSetDefinitions:
-        - dialsType: Graph
-          applyOnDataSets: [ "ND280" ]
-          minDialResponse: 0
-          #parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_alpha.txt"
-          dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
-          dialsList:       "EB_alpha_graphs" # TObjArray
 

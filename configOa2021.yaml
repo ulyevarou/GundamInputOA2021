@@ -1,6 +1,12 @@
+#########################################
+# OA 2021 inputs for ND fit
+#########################################
+
 generateSamplePlots: true
 generateOneSigmaPlots: false # can be enabled with --one-sigma
 scanParameters: false # can be triggered with --scan
+
+minGundamVersion: 1.4.3
 
 # Pushing the parameter away from the minimum allow Minuit to better scan the area
 throwMcBeforeFit: true
@@ -46,29 +52,10 @@ fitterEngineConfig:
 
     showEventBreakdown: true # default: true
     showEventBreakdownBeforePrior: true # default: false
-
     throwParameters: false
-    fitSampleSetConfig:     "./inputs/samples/configSamples_banff_v5.yaml"
-    parameterSetListConfig: "./inputs/parameters/configParSet_banff_fin_v8.yaml"
-    plotGeneratorConfig: "./commonConfigPlotGenerator.yaml"
 
-    dataSetList:
-      - name: "ND280"
-        isEnabled: true
-        mc:
-          tree: "sample_sum"
-          nominalWeightFormula: "FluxWeight[0] * DetNomWeight * POTWeight * PileUpWeight * passedPsyche"
-          filePathList:
-
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run9wMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run2aMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run2wMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run3aMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run4aMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run4wMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run5wMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run6aMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run7wMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run8aMCsplines.root"
-            - "/sps/t2k/uyevarou/Fitter_v6/Work/OA2021/v3_RES_Eb_mirror_0/run8wMCsplines.root"
+    dataSetList:            "./inputs/datasets/configDatasets.yaml"
+    fitSampleSetConfig:     "./inputs/samples/configSamples.yaml"
+    parameterSetListConfig: "./inputs/parameters/configParSet.yaml"
+    plotGeneratorConfig:    "./inputs/plots/configPlotGenerator.yaml"
 
