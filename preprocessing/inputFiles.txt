@@ -1,0 +1,24 @@
+# /Users/ablanche/Documents/Work/Output/results/gundam/common/OA2020/NDMC_psycheInfoAdded/run4aMCsplines.root
+# /Users/ablanche/Documents/Work/Output/results/gundam/common/OA2020/NDMC_psycheInfoAdded/run5MCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run2aMCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run2wMCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run3MCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run4aMCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run4wMCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run5MCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run6MCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run7MCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run8aMCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run8wMCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run9MCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand2aSplines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand2wSplines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand3Splines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand4aSplines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand4wSplines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runRHCsand5Splines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runRHCsand6Splines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runRHCsand7Splines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand8aSplines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand8wSplines.root
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runRHCsand9Splines.root
