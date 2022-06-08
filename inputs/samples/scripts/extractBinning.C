@@ -28,6 +28,7 @@ std::string makeBinning(TH2Poly* h_){
 
   for( int iBin = 0 ; iBin < h_->GetBins()->GetEntries() ; iBin++ ){
     auto* bin = (TH2PolyBin*) h_->GetBins()->At(iBin);
+    bin->Print("ALL");
     ss << bin->GetXMin() << " ";
     ss << bin->GetXMax() << " ";
     ss << bin->GetYMin() << " ";
