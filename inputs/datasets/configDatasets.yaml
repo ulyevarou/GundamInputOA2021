@@ -12,7 +12,8 @@
   mc:
     tree: "sample_sum"
     selectionCutFormula: "( NVertexID == 1 ) * passedPsyche * (DetNomWeight > 0) * (FluxWeight[0] > 0)"
-    nominalWeightFormula: "FluxWeight[0] * POTWeight * PileUpWeight * DetNomWeight * ( 1 + ( TMath::Abs(ReactionCode) == 38 || TMath::Abs(ReactionCode) == 39 ) )"
+#    nominalWeightFormula: "FluxWeight[0] * POTWeight * PileUpWeight * ( (DetNomWeight > 10) *10 + (DetNomWeight<=10)*DetNomWeight) * ( 1 + ( TMath::Abs(ReactionCode) == 38 || TMath::Abs(ReactionCode) == 39 ) )"
+    nominalWeightFormula: "FluxWeight[0] * POTWeight * PileUpWeight * ( (DetNomWeight > 10) ? 10: DetNomWeight ) * ( 1 + ( TMath::Abs(ReactionCode) == 38 || TMath::Abs(ReactionCode) == 39 ) )"
     #    additionalLeavesStorage: [ "SelectedSample" ]
     filePathList:
 #      - "/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run2aMCsplines.root"
