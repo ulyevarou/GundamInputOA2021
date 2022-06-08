@@ -28,7 +28,7 @@ void addBranchesToSampleSum(){
 
     std::string outputPath = outputFolder + "/" + GenericToolbox::getFileNameFromFilePath(filePath);
     if( not overrideOutput and GenericToolbox::doesTFileIsValid(outputPath) ){
-      LogInfo << outputPath << " -> already processed." << std::endl;
+      LogWarning << outputPath << " -> already processed." << std::endl;
       continue;
     }
 
