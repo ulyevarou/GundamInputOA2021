@@ -21,4 +21,4 @@
 /sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runRHCsand7Splines.root
 /sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand8aSplines.root
 /sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand8wSplines.root
-/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runRHCsand9Splines.root"
+/sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runRHCsand9Splines.root
