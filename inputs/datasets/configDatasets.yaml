@@ -11,9 +11,9 @@
 
   mc:
     tree: "sample_sum"
-    selectionCutFormula: "( NVertexID == 1 ) * passedPsyche * (DetNomWeight > 0) * (FluxWeight[0] > 0) * (!isConsecutiveIdenticalEvent)"
-#    nominalWeightFormula: "FluxWeight[0] * POTWeight * PileUpWeight * ( (DetNomWeight > 10) *10 + (DetNomWeight<=10)*DetNomWeight) * ( 1 + ( TMath::Abs(ReactionCode) == 38 || TMath::Abs(ReactionCode) == 39 ) )"
-    nominalWeightFormula: "FluxWeight[0] * POTWeight * PileUpWeight * ( (DetNomWeight > 10) ? 10: DetNomWeight ) * ( 1 + ( TMath::Abs(ReactionCode) == 38 || TMath::Abs(ReactionCode) == 39 ) )"
+    selectionCutFormula: "passedPsyche * (!isConsecutiveIdenticalEvent)"
+#    selectionCutFormula: "( NVertexID == 1 ) * passedPsyche * (DetNomWeight > 0) * (FluxWeight[0] > 0) * (!isConsecutiveIdenticalEvent)"
+    nominalWeightFormula: "FluxWeight[0] * POTWeight * PileUpWeight * ( (DetNomWeight > 10) ? 10: (DetNomWeight < 0 ? 0 : DetNomWeight ) * ( 1 + ( TMath::Abs(ReactionCode) == 38 || TMath::Abs(ReactionCode) == 39 ) )"
     #    additionalLeavesStorage: [ "SelectedSample" ]
     overrideLeafDict: # originalVarName, otherLeafName[optionalArrayIndex]
       - { eventVar: "Pmu",            leafVar: "PmuCoulombCorrection" }
