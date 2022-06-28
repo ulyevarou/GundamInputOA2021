@@ -1,10 +1,8 @@
 # Sample Configuration
 
 dataEventType: Asimov # {}
-llhStatFunction: "BarlowLLH"
-#llhStatFunction: "BarlowLLH_OA2020_Bad"
-#llhStatFunction: "BarlowLLH_Fix_Weight"
-#llhStatFunction: "EffLLH"
+llhStatFunction: "BarlowLLH_BANFF_OA2021"
+#llhStatFunction: "BarlowLLH"
 #llhStatFunction: "PoissonLLH"
 
 fitSampleList:
