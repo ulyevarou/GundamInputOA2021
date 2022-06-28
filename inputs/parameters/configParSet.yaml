@@ -68,6 +68,7 @@
         - dialsType: Graph
           applyOnDataSets: [ "ND280" ]
           minDialResponse: 0
+          applyCondition: "[TgtMat] == 12"
           parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_C_nu.txt"
           dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
           dialsList:       "EB_bin_C_nu_graphs" # TObjArray
@@ -78,6 +79,7 @@
         - dialsType: Graph
           applyOnDataSets: [ "ND280" ]
           minDialResponse: 0
+          applyCondition: "[TgtMat] == 12"
           parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_C_nubar.txt"
           dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
           dialsList:       "EB_bin_C_nubar_graphs" # TObjArray
@@ -89,6 +91,7 @@
         - dialsType: Graph
           applyOnDataSets: [ "ND280" ]
           minDialResponse: 0
+          applyCondition: "[TgtMat] == 16"
           parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_O_nu.txt"
           dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
           dialsList:       "EB_bin_O_nu_graphs" # TObjArray
@@ -99,6 +102,7 @@
         - dialsType: Graph
           applyOnDataSets: [ "ND280" ]
           minDialResponse: 0
+          applyCondition: "[TgtMat] == 16"
           parametersBinningPath: "./inputs/parameters/xsecBinned/binning_EB_bin_O_nubar.txt"
           dialsFilePath:   "./inputs/parameters/xsecBinned/Eb_dials.root"
           dialsList:       "EB_bin_O_nubar_graphs" # TObjArray
