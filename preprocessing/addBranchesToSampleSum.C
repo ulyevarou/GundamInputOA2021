@@ -4,7 +4,8 @@
 bool overrideOutput{false}; // ignore if files have already been processed.
 
 // std::string outputFolder = "./out";
-std::string outputFolder = "/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/WithExtraBranchesForGundam";
+//std::string outputFolder = "/sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/WithExtraBranchesForGundam";
+std::string outputFolder = "/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/WithExtraBranchesForGundam";
 
 // from MaCh3
 double ApplyCoulombShift(int TruePDG, int NuPDG, int target, int reaction);
