@@ -41,6 +41,10 @@ fitterEngineConfig:
   scanConfig: "./inputs/fitter/configScan.yaml"
   minimizerConfig: "./inputs/fitter/configMinimizer.yaml"
 
+  # debug options
+  debugPrintLoadedEvents: false
+  debugPrintLoadedEventsNbPerSample: 10
+
   propagatorConfig:
 
     showEventBreakdown: true # default: true
