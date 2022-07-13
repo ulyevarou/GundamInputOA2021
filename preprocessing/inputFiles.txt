@@ -13,15 +13,15 @@
 # /sps/t2k/common/inputs/OA2021/ND280/MC/NonMirrored_Splines/v7_UpdatedKnots/run9MCsplines.root
 /sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run2aMCsplines.root
 /sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run2wMCsplines.root
-/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run3MCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run3aMCsplines.root
 /sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run4aMCsplines.root
 /sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run4wMCsplines.root
-/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run5MCsplines.root
-/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run6MCsplines.root
-/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run7MCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run5wMCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run6aMCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run7wMCsplines.rootw
 /sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run8aMCsplines.root
 /sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run8wMCsplines.root
-/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run9MCsplines.root
+/sps/t2k/common/inputs/OA2021/ND280/MC/mirrored_splines/v3_RES_Eb_mirror_0/run9wMCsplines.root
 # /sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand2aSplines.root
 # /sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand2wSplines.root
 # /sps/t2k/common/inputs/OA2021/ND280/Sand/PsycheIndependentSplines/runFHCsand3Splines.root
